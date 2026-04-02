@@ -1,6 +1,7 @@
 # AGENTS.md — Codex Instructions
 
 ## Project: Financial Market Trend Forecasting
+
 This project builds a stock market trend prediction system for Indian equities using ML/DL models and multi-source financial data.
 
 ## Fixed Data Window
@@ -10,8 +11,11 @@ END DATE: 2026-01-01
 
 Do not download data outside this range.
 
+## Stock Universe
+All Nifty 100 stocks + Nifty Index (^NSEI)
+
 ## Data Sources (Use in this order)
-1. Stock Price Data — Yahoo Finance (OHLCV for Nifty 500 stocks and Nifty index)
+1. Stock Price Data — Yahoo Finance (OHLCV for Nifty 100 stocks and Nifty index)
 2. Technical Indicators — TA-Lib (RSI, MACD, EMA, SMA, Bollinger Bands, Volume indicators)
 3. Global Market Proxies — Yahoo Finance:
    ^GSPC (S&P 500)
@@ -56,28 +60,29 @@ Financial-Marketing-Forecasting/
 └── README.md
 
 ## Notebook Execution Order
-1. 02_stock_ingestion.ipynb
-2. 03_technical_indicators.ipynb
-3. 04_global_market_data.ipynb
-4. 05_news_sentiment.ipynb
-5. 06_gdelt_events.ipynb
-6. 07_fred_macro_data.ipynb
-7. 08_data_merging_and_alignment.ipynb
-8. 09_data_checks_and_validation.ipynb
-9. 10_eda.ipynb
-10. 11_preprocessing_and_feature_engineering.ipynb
-11. 12_volatility_clustering.ipynb
-12. 13_model_training_baselines.ipynb
-13. 14_model_training_lstm_transformer.ipynb
-14. 15_model_comparison_and_selection.ipynb
-15. 16_final_dataset_export.ipynb
+1. 01_problem_statement.ipynb
+2. 02_stock_ingestion.ipynb
+3. 03_technical_indicators.ipynb
+4. 04_global_market_data.ipynb
+5. 05_news_sentiment.ipynb
+6. 06_gdelt_events.ipynb
+7. 07_fred_macro_data.ipynb
+8. 08_data_merging_and_alignment.ipynb
+9. 09_data_checks_and_validation.ipynb
+10. 10_eda.ipynb
+11. 11_preprocessing_and_feature_engineering.ipynb
+12. 12_volatility_clustering.ipynb
+13. 13_model_training_baselines.ipynb
+14. 14_model_training_lstm_transformer.ipynb
+15. 15_model_comparison_and_selection.ipynb
+16. 16_final_dataset_export.ipynb
 
 ## ML Problem Definition
 Target variable:
 If Tomorrow Close > Today Close → 1
 Else → 0
 
-This is a binary classification problem.
+Binary classification problem.
 
 ## Volatility Classification
 Stocks must be classified into:
@@ -114,7 +119,6 @@ Model selection must be based on validation data only.
 
 ## Codex Responsibilities
 Codex should focus on:
-- Creating project structure
 - Writing ETL pipeline modules
 - Writing data ingestion scripts
 - Writing data validation scripts

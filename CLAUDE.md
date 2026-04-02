@@ -9,6 +9,9 @@ All data must be collected strictly between:
 START DATE: 2023-01-01
 END DATE: 2026-01-01
 
+## Stock Universe
+All Nifty 100 stocks + Nifty Index (^NSEI)
+
 ## Data Sources
 1. Stock Price Data — Yahoo Finance
 2. Technical Indicators — TA-Lib

@@ -24,7 +24,7 @@ Volatility-based stock categories:
 ## 3. Data Sources and Order
 The project will use the following sources in this exact order:
 
-1. **Stock Price Data** — Yahoo Finance (OHLCV for selected Nifty 500 stocks and Nifty index)
+1. **Stock Price Data** — Yahoo Finance (OHLCV for selected Nifty 100 stocks and Nifty index)
 2. **Technical Indicators** — TA-Lib (RSI, MACD, EMA, SMA, Bollinger Bands, volume indicators)
 3. **Global Market Proxies** — Yahoo Finance
    - `^GSPC` (S&P 500)
