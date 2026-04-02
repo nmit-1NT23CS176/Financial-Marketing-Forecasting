@@ -267,3 +267,4 @@ Create the first notebook:
 
 Then validate stock price download and date alignment before adding the other sources.
 
+
