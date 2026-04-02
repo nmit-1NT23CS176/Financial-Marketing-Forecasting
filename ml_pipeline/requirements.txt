@@ -1,6 +1,7 @@
 pandas
 numpy
 scipy
+ipykernel
 
 yfinance
 requests
