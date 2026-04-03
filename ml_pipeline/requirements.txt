@@ -26,6 +26,9 @@ ta
 nltk
 textblob
 vaderSentiment
+fredapi
+alphavantage
+gdelt
 
 matplotlib
 seaborn
