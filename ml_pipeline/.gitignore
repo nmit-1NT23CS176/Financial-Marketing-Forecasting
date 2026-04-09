@@ -1,5 +1,6 @@
 venv
 .env
-ml_pipeline/Market_Data/processed/final_model_dataset.csv
+
+# ignore processed data
 ml_pipeline/Market_Data/processed/*.csv
-ml_pipeline\Market_Data\processed\final_model_dataset.csv
+ml_pipeline/Market_Data/processed/*.parquet
